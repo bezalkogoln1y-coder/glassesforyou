@@ -1,0 +1,21 @@
+header .head {
+    background: url(../img/head.jpg);
+}
+
+header .logo {
+    position: relative;
+}
+
+header .logo img {
+    position: absolute;
+    top: -10px;
+}
+
+header .head .container {
+    padding: 10px 0;
+}
+
+header .banner {
+    background: url(../img/banner.jpg);
+    height: 500px;
+}
