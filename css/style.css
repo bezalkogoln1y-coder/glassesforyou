@@ -1,21 +1,37 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 header .head {
     background: url(../img/head.jpg);
-}
-
-header .logo {
-    position: relative;
-}
-
-header .logo img {
-    position: absolute;
-    top: -10px;
+    text-transform: uppercase;
 }
 
 header .head .container {
-    padding: 10px 0;
+    padding: 13px 0;
+}
+
+header .head .logo {
+    position: relative;
+}
+
+header .head .logo img {
+    position: absolute;
+    top: -15px;
 }
 
 header .banner {
-    background: url(../img/banner.jpg);
+    background: url(../img/banner.jpg) no-repeat center top;
     height: 500px;
 }
