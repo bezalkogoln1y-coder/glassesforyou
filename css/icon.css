@@ -3,17 +3,17 @@
 }
 
 .world {
-    background-position: 5px 10px;
+    background-position: 5px 20px;
 }
 
 .high {
-    background-position: 5px -70px;
+    background-position: 5px -60px;
 }
 
 .change {
-    background-position: 5px -140px;
+    background-position: 5px -125px;
 }
 
 .surprize {
-    background-position: 5px -210px;
+    background-position: 5px -200px;
 }
