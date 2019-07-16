@@ -1,0 +1,19 @@
+.world, .high, .change, .surprize {
+    background: url(../img/sprite.png) no-repeat;
+}
+
+.world {
+    background-position: 5px 10px;
+}
+
+.high {
+    background-position: 5px -70px;
+}
+
+.change {
+    background-position: 5px -140px;
+}
+
+.surprize {
+    background-position: 5px -210px;
+}

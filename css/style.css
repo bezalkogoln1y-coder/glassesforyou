@@ -13,6 +13,7 @@ p {
     font-weight: 400;
 }
 
+
 header .head {
     background: url(../img/head.jpg);
     text-transform: uppercase;
@@ -35,3 +36,35 @@ header .banner {
     background: url(../img/banner.jpg) no-repeat center top;
     height: 500px;
 }
+
+header .banner ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+header .banner ul li {
+    list-style-type: none;
+    padding: 10px 0 0 65px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header .banner ul li.button {
+    padding: 10px 0;
+}
+
+header .banner ul li.button a.btn {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 1rem 1.9rem;
+    border-radius: 15px;
+    border-bottom: 5px solid #860606;
+}
+
+header .banner ul li.button a.btn:hover {
+    opacity: .9;
+}
+
