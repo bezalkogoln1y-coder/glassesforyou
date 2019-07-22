@@ -15,8 +15,30 @@ p {
     font-weight: 400;
 }
 
+.price {
+    color: red;
+    font-weight: 700;
+    font-size: 26px;
+}
 
-header .head, #desktop_1, #desktop_3 {
+.price .old {
+    color: gray;
+    font-size: 24px;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+
+.order {
+    text-align: center;
+}
+
+.order .btn {
+    background: green;
+    color: white;
+    font-size: 22px;
+}
+
+header .head, #desktop_1, #desktop_3, #desktop_5 {
     background: url(../img/head.jpg);
 }
 
@@ -141,29 +163,6 @@ section h2 {
     font-weight: 500;
 }
 
-#desktop_2 .catalog .item .price {
-    color: red;
-    font-weight: 700;
-    font-size: 26px;
-}
-
-#desktop_2 .catalog .item .price .old {
-    color: gray;
-    font-size: 24px;
-    text-decoration: line-through;
-    padding-right: 10px;
-}
-
-#desktop_2 .catalog .item .order {
-    text-align: center;
-}
-
-#desktop_2 .catalog .item .order .btn {
-    background: green;
-    color: white;
-    font-size: 22px;
-}
-
 #desktop_2 .catalog .item .remain {
     text-align: center;
 }
@@ -190,4 +189,56 @@ section h2 {
     font-weight: 700;
 }
 
-#desktop_3 .text {
+#desktop_4 h2, #desktop_6 h2 {
+    color: white;
+}
+
+#desktop_4 {
+    background: url(../img/otzivi.jpg) no-repeat;
+}
+
+#desktop_4 img {
+    width: 100%;
+}
+
+#desktop_5 h3 span {
+    color: red;
+}
+
+#desktop_6 {
+    background: url(../img/otzivi.jpg) no-repeat;
+    color: white;
+}
+
+footer {
+    background: url(../img/footer.jpg) no-repeat center #f7f9f8;
+}
+
+footer form {
+    text-align: center;
+    background: rgb(201, 202, 202) none repeat scroll 0% 0%;
+    border-radius: 15px;
+}
+
+footer form .fields input {
+    width: 80%;
+    padding: 10px;
+    border: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer form p:nth-of-type(5) {
+    font-style: italic;
+    color: gray;
+}
+
+footer .content h2 span {
+    color: red;
+}
+
+footer .content p {
+    padding-top: 17rem;
+    color: #bb2727;
+    text-align: center;
+}
