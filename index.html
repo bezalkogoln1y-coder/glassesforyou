@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/jquery.flipcountdown.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-
-        </nav>
         <div class="head">
             <div class="container w-75">
                 <div class="row justify-content-center">
@@ -87,21 +85,15 @@
            <div class="container">
                <div class="tabs">
                    <p class="size">Выберите модель:</p>
-                   <input name="tabs" id="tab1" checked="checked" type="radio">
-                   <label for="tab1" class="ftab">
-                       <span>Aviator</span>
-                   </label>
-                   <input name="tabs" id="tab2" type="radio">
-                   <label for="tab2" class="ctab">
-                       <span>clubmaster</span>
-                   </label>
-                   <input name="tabs" id="tab3" type="radio">
-                   <label for="tab3">
-                       <span>WAYFARER</span>
-                   </label>
+                   <div class="toggles">
+                       <button id="showall">ВСЕ</button>
+                       <button id="aviator">AVIATOR</button>
+                       <button id="clubmaster">CLUBMASTER</button>
+                       <button id="wayfarer">WAYFARER</button>
+                   </div>
                </div>
-               <div class="row justify-content-center">
-                   <div class="col-4 item">
+               <div class="row posts justify-content-center">
+                   <div class="col-4 item aviator">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -114,7 +106,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item clubmaster">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -127,7 +119,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item wayfarer">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -140,7 +132,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item aviator">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -153,7 +145,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item wayfarer">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -166,7 +158,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item clubmaster">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -179,7 +171,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item wayfarer">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -192,7 +184,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item wayfarer">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -205,7 +197,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item aviator">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -218,7 +210,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item wayfarer">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -231,7 +223,7 @@
                        <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                        <p class="remain"><span class="word1">Осталось:</span> <span class="word2">5 шт.</span></p>
                    </div>
-                   <div class="col-4 item">
+                   <div class="col-4 item clubmaster">
                        <p class="sell">Скидка до 20%</p>
                        <p class="image">
                            <img src="img/a1.jpg" alt="Aviator">
@@ -330,15 +322,15 @@
             <div class="row">
                 <div class="col-4 form">
                     <form action="">
-                        <p class="pt-3">До конца акции осталось:</p>
-                        <p>Счётчик</p>
+                        <p class="pt-3 saleprice">До конца акции осталось</p>
+                        <div class="eTimer"></div>
                         <p class="price">
-                          <span class="old">9400 руб.</span>
-                           1990 руб.
-                       </p>
-                       <div class="fields">
-                        <input type="name" placeholder="Ваше имя">
-                        <input type="tel" placeholder="Телефон">
+                            <span class="old">9400 руб.</span>
+                            1990 руб.
+                        </p>
+                        <div class="fields">
+                            <input type="name" placeholder="Ваше имя">
+                            <input type="tel" placeholder="Телефон">
                         </div>
                         <p class="order"><a href="#" class="btn">Заказать со скидкой</a></p>
                         <p class="pb-3">Наши менеджеры свяжутся с вами для консультации и помогут сделать заказ</p>
@@ -348,11 +340,14 @@
                     <h2 class="align-items-start">ЗАКАЖИТЕ ЛЕГЕНДАРНЫЕ ОЧКИ <br><span>RAY-BAN СО СКИДКОЙ 75%</span></h2>
                     <p>По желанию клиента, очки могут быть укомплектованы чехлом, салфеткой и поставляться в фирменной коробке.</p>
                 </div>
-            </div>
+                </div>
         </div>
     </footer>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flipcountdown.js"></script>
+<script src="https://e-timer.ru/js/etimer.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

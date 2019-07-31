@@ -36,6 +36,7 @@ p {
     background: green;
     color: white;
     font-size: 22px;
+    border-bottom: 5px solid #056905;
 }
 
 header .head, #desktop_1, #desktop_3, #desktop_5 {
@@ -112,25 +113,23 @@ section h2 {
     color: white;
 }
 
-#desktop_2 .catalog .tabs {
+.tabs {
     display: flex;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 30px 0;
+    justify-content: center;
+    margin-top: 1.5rem;
 }
 
-#desktop_2 .catalog .tabs .size {
-    font-weight: 700;
-    margin: 0;
+.tabs .size {
+    padding-right: 50px;
+    font-size: 26px;
 }
 
-#desktop_2 .catalog .tabs label {
-    padding: 0 0 0 110px;
-    margin : 0;
-}
-
-#desktop_2 .catalog .tabs input[type="radio"] {
-    display: none;
+.toggles button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: 26px;
 }
 
 #desktop_2 .catalog .item {
@@ -241,4 +240,47 @@ footer .content p {
     padding-top: 17rem;
     color: #bb2727;
     text-align: center;
+}
+
+.countdown {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}
+
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: red;
+    display: inline-block;
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.saleprice {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.eTimer .etUnit .etSign {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.eTimer .etTitle {
+    display: none;
 }
